@@ -13,15 +13,15 @@ This file covers the standard structure of an html email.
 
 ### [Overview](#overview)
 
-While web standards have progressed and the web development community has generally embraced the transition to HTML5, HTML email has largely been stuck in the past due to a relatively large number of email clients and lack of consensus between them on what each client will interpret, strip out, replace, or disregard in your html email. 
+While web standards have progressed and the web development community has generally embraced the transition to HTML5, HTML email has largely been stuck in the past due to a relatively large number of email clients and lack of consensus between them on what each client will interpret, strip out, replace, or disregard in your HTML email. 
 
-As such, much of what you will be doing when creating html emails will be contrary to what you would do if you were creating an html web page. While the approach is similar, the implementation is different. For instance, the layout of an HTML email and an HTML web page both follow a structure similar to below:
+As such, much of the code you will be writing when creating HTML emails will be contrary to what you would do if you were creating an HTML web page. While the approach is very similar, the implementation is different. For instance, the high-level layout of an HTML email and an HTML web page both follow a similar structural approach. The simplified structure below can serve as a starting point for either an HTML email or web page:
 
     <!DOCTYPE>
     <html lang="en">
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      
+        <!--INSERT OTHER META TAGS AND SCRIPTS HERE-->
         <style>
           <!--INSERT YOUR EMBEDDED STYLE ATTRIBUTES HERE-->
         </style>
@@ -33,6 +33,15 @@ As such, much of what you will be doing when creating html emails will be contra
       </body>
     </html>
 
+Once you start building out the individual elements of your HTML email, however, the differences between developing for HTML email and developing for the web become vastly apparent. 
+
+For instance, in web development, page elements are structured in <div> tags and often make heavy use of CSS features such as `grid` or `flexbox` to optimize their layout. 
+
+In HTML email development on the other hand, <table> tags are the dominant layout element as they render more reliably across more email clients than <div> tags and HTML tag attributes are used more frequently in addition to CSS to provide a more reliably rendered email.
+    
+We will go over each part of an HTML email below in more detail, but for now, just know that HTML email development should feel familiar at a high-level and you should be prepared to embrace the 'quirks' of HTML email development. Each part of your HTML email document will require a new approach if you are coming from a web development perspective, and much of it may feel like a trip down memory lane if you have worked with past versions of HTML. With HTML email, everything is new, and everything is old.
+
+You can navigate directly to an HTML email section by using the table of contents above, or you can continue on to read through all sections from top to bottom. 
 
 ### [DOCTYPE](#doctype)
 
