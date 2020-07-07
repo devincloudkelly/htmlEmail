@@ -39,7 +39,7 @@ For instance, in web development, page elements are structured in `<div>` tags a
 
 In HTML email development on the other hand, `<table>` tags are the dominant layout element as they render more reliably across more email clients than `<div>` tags and HTML tag attributes are used more frequently in addition to CSS to provide a more reliably rendered email.
     
-We will go over each part of an HTML email below in more detail, but for now, just know that HTML email development should feel familiar at a high-level, but you should be prepared to embrace the 'quirks' of HTML email development at the implementation level. 
+We will go over each part of an HTML email below in more detail, but for now, just know that HTML email development should feel familiar at a high-level, but you should be prepared to embrace the 'quirks' of HTML email development at the implementation level. HTML email development is largely a matter of developing for multiple clients, which may include simplifiying your designs, supporting only certain clients based on your subscriber data, and creating media queries and fallbacks for certain email clients.
 
 Each part of your HTML email document will require a new approach if you are coming from a web development perspective, and much of it may feel like a trip down memory lane if you have worked with past versions of HTML, or a history lesson to those new to the community.
 
@@ -55,6 +55,32 @@ Your DOCTYPE declaration can be written as follows:
 
 ### [html tag](#html)
 
-The `<html>` tag is where you can declare XML namespaces which are used to define and discern between elements that share the same name. Check out this article for more on [XML namespaces](https://www.sitepoint.com/xml-namespaces-explained/)
+The `<html>` tag is where you can declare the language for your document, ex. `lang="en"` for English. It is also where you can declare XML namespaces.
 
+XML namespaces are used to define and discern between elements that share the same name. You can think of them as different "libraries" of elements for you to use in your HTML document. 
 
+Since HTML email development involves developing for disparate clients, adding in several XML namespaces in your `<html>` tag allows you to use these different "libraries" and access new elements to help you create emails that render well across clients. If you're looking for more detail on [XML namespaces](https://www.sitepoint.com/xml-namespaces-explained/), check out this article by Ian Stuart. 
+
+One of the common sticking-points for HTML email developers is Outlook. Most versions of Outlook are now rendered by Microsoft Word (yes, that Microsoft Word) and as such, they don't display HTML elements as intuitively as you'd like. To get around this, its common to code fallbacks for the sections of your email that aren't rendering properly in Outlook. For this, you might want to add the following namespace: 
+
+    xmlns:o="urn:schemas-microsoft-com:office:office
+
+Note the `:o` after `xmlns`. This is a prefix and it allows you to designate which namespace the element you are using in your HTML document belongs to. For instance, if `<table>` exists in two namespaces, the code below references the `<table>` element that is found in the XML namespace you designated as `xmlns:o`.
+
+    <o:table>
+      <o:tr>
+        <o:td>
+        </o:td>
+      </o:tr>
+    </o:table>
+
+Another common XML namespace to include would be the one for VML. When you want a reliable background image in your HTML email, VML works great. You can add it with the following: 
+
+    xmlns:v="urn:schemas-microsoft-com:vml
+
+Again, you need to add some designation after the  `xmlns` to allow you to differentiate between namespaces in your HTML document.
+
+You'll have to confirm which email clients you are targeting and your email goals to determine which XML namespaces to include, but here's a good starter if you plan on using a VML background: 
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+ 
