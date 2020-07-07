@@ -55,4 +55,6 @@ Your DOCTYPE declaration can be written as follows:
 
 ### [html tag](#html)
 
+The `<html>` tag is where you can declare XML namespaces which are used to define and discern between elements that share the same name. Check out this article for more on [XML namespaces](https://www.sitepoint.com/xml-namespaces-explained/)
+
 
