@@ -5,8 +5,8 @@ This file covers the standard structure of an html email.
 1. [Overview](#overview)
 2. [DOCTYPE](#doctype)
 2. [html tag](#html)
-3. [meta tag](#meta)
 3. [head tag](#head)
+3. [meta tag](#meta)
 4. [style tag](#style)
 5. [body tag](#body)
 6. [outer table](#outertable)
@@ -15,7 +15,25 @@ This file covers the standard structure of an html email.
 
 While web standards have progressed and the web development community has generally embraced the transition to HTML5, HTML email has largely been stuck in the past due to a relatively large number of email clients and lack of consensus between them on what each client will interpret, strip out, replace, or disregard in your html email. 
 
-As such, much of what you will be doing when creating html emails will be contrary to what you would do in web development. While the approach is similar, the implementation is different.
+As such, much of what you will be doing when creating html emails will be contrary to what you would do if you were creating an html web page. While the approach is similar, the implementation is different. For instance, the layout of an HTML email and an HTML web page both follow a structure similar to below:
+
+`<!DOCTYPE>
+  <html lang="en">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      
+      <style>
+        <!--INSERT YOUR EMBEDDED STYLE ATTRIBUTES-->
+      </style>
+    </head>
+    <body>
+      <!--INSERT THE BODY OF YOUR EMAIL/WEB PAGE HERE-->
+      
+      
+      
+    </body>
+  </html>
+`
 
 ### [DOCTYPE](#doctype)
 
