@@ -17,21 +17,21 @@ While web standards have progressed and the web development community has genera
 
 As such, much of what you will be doing when creating html emails will be contrary to what you would do if you were creating an html web page. While the approach is similar, the implementation is different. For instance, the layout of an HTML email and an HTML web page both follow a structure similar to below:
 
-  <!DOCTYPE>
-  <html lang="en">
-    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!DOCTYPE>
+    <html lang="en">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       
-      <style>
-        <!--INSERT YOUR EMBEDDED STYLE ATTRIBUTES HERE-->
-      </style>
-    </head>
-    <body>
-      <!--INSERT THE BODY OF YOUR EMAIL/WEB PAGE HERE-->
+        <style>
+          <!--INSERT YOUR EMBEDDED STYLE ATTRIBUTES HERE-->
+        </style>
+      </head>
+      <body>
+        <!--INSERT THE BODY OF YOUR EMAIL/WEB PAGE HERE-->
       
       
-    </body>
-  </html>
+      </body>
+    </html>
 
 
 ### [DOCTYPE](#doctype)
