@@ -39,7 +39,9 @@ For instance, in web development, page elements are structured in `<div>` tags a
 
 In HTML email development on the other hand, `<table>` tags are the dominant layout element as they render more reliably across more email clients than `<div>` tags and HTML tag attributes are used more frequently in addition to CSS to provide a more reliably rendered email.
     
-We will go over each part of an HTML email below in more detail, but for now, just know that HTML email development should feel familiar at a high-level and you should be prepared to embrace the 'quirks' of HTML email development. Each part of your HTML email document will require a new approach if you are coming from a web development perspective, and much of it may feel like a trip down memory lane if you have worked with past versions of HTML. With HTML email, everything is new, and everything is old.
+We will go over each part of an HTML email below in more detail, but for now, just know that HTML email development should feel familiar at a high-level, but you should be prepared to embrace the 'quirks' of HTML email development at the implementation level. 
+
+Each part of your HTML email document will require a new approach if you are coming from a web development perspective, and much of it may feel like a trip down memory lane if you have worked with past versions of HTML, or a history lesson to those new to the community.
 
 You can navigate directly to an HTML email section by using the table of contents above, or you can continue on to read through all sections from top to bottom. 
 
