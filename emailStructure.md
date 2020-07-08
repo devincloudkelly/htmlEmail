@@ -89,6 +89,12 @@ You'll have to confirm which email clients you are targeting and your email goal
 
 The `<head>` element will contain metadata about your HTML document. 
 
-That metadata will be nested between your opening and closing `<head></head>` tags and will commonly include `<meta>` tags for settings such as the device viewport, `<style>` tags for your embedded CSS, and `<script>` tags which are useful for things like annotating your email for a more rich user experience in Gmail's promotions tab.
+That metadata will be nested between your opening and closing `<head></head>` tags and will commonly include `<meta>` tags for settings such as the device viewport, `<style>` tags for your embedded CSS, and `<script>` tags which are useful for things like annotating your email for a richer user experience in Gmail's promotions tab.
 
 ### [meta tag](#meta)
+
+For `<meta>` tags, there are commonly (at least) two that are used. One to define your `content-type` and one to define your `viewport`.
+
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <meta name="viewport" content="width=device-width">
+
