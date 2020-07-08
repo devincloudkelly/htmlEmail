@@ -113,8 +113,8 @@ Second, if someone opens your email in the browser, this title will show up on t
 For `<meta>` tags, there are two that are commonly used; one to define your `Content-Type` and one to define your `viewport`. The `<meta>` element is nested inside your `<head>` element.
 
      <head>
-       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
      </head>
 
 The `<meta>` tag that sets your `Content-type` is used to ensure your document is parsed properly by the browser/email client, so you should include this in every document. 
