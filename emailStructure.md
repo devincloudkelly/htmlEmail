@@ -94,12 +94,22 @@ That metadata will be nested between your opening and closing `<head></head>` ta
 
 ### [title tag](#title)
 
+This one has limited use, but is still important. First, it is great for accessibility and provides a title for your HTML email for subscribers who are using an assistive device. The `<title>` element is nested between your `<head>` tags.
+
+Second, if someone opens your email in the browser, this title will show up on the tab. An example `<title>` tag might look like this: 
+
+    <head>
+      <title>How to code an HTML email</title>
+    </head>
+
 ### [meta tag](#meta)
 
-For `<meta>` tags, there are two that are commonly used; one to define your `Content-Type` and one to define your `viewport`.
+For `<meta>` tags, there are two that are commonly used; one to define your `Content-Type` and one to define your `viewport`. The `<meta>` element is nested inside your `<head>` element.
 
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     </head>
 
 The `<meta>` tag that sets your `Content-type` is used to ensure your document is parsed properly by the browser/email client, so you should include this in every document. 
 
@@ -111,3 +121,4 @@ Another common `<meta>` tag is one to help ensure your email renders properly in
 
 ### [style tag](#style)
 
+The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `style` attribute in your HTML elements).
