@@ -93,8 +93,12 @@ That metadata will be nested between your opening and closing `<head></head>` ta
 
 ### [meta tag](#meta)
 
-For `<meta>` tags, there are commonly (at least) two that are used. One to define your `content-type` and one to define your `viewport`.
+For `<meta>` tags, there are two that are commonly used; one to define your `Content-Type` and one to define your `viewport`.
 
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-     <meta name="viewport" content="width=device-width">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+The `<meta>` tag that sets your `Content-type` is used to ensure your document is parsed properly by the browser/email client, so you should include this in every document. 
+
+The tag for the `viewport` is important for optimizing for mobile and since the majority of subscribers now access email primarily on their phone, this tag should also be included in every document. Further info on this tag can be [found on MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag).
 
