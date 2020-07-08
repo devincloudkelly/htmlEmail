@@ -127,4 +127,46 @@ Another common `<meta>` tag is one to help ensure your email renders properly in
 
 ### [style tag](#style)
 
-The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `<style>` attribute in your HTML elements).
+The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `<style>` attribute in your HTML elements). Linking to external stylesheets is generally avoided.
+
+Depending on the email clients you are designing your emails for, the `<style>` element will commonly include common CSS styles for HTML elements and classes, `@media` queries for mobile-responsiveness, and separate stylesheets for disparate email clients, commonly for Outlook.
+
+       <style>
+       
+       <!--Styling for HTML elements and classes-->
+       
+        h1 {
+         font-size: 22px;
+         line-height: 30px;
+        }
+        p {
+         font-size: 16px; 
+         line-height: 20px;
+        }
+        table {
+         border: 0 !important;
+        }
+        .desktop-button {
+         width: 50%;
+        }
+        
+        <!--Media queries for mobile-responsiveness-->
+        
+        @media only screen and (max-width: 660px) {
+         .mobile-center {
+          text-align: center !important;
+         }
+        } 
+       </style>
+       
+       <!--Separate Stylesheet for Outlook-->
+       
+       <!--[if mso]>
+       <style>
+        p {
+         font-size: 100% !important;
+        }
+       </style>
+       <[endif]-->
+
+
