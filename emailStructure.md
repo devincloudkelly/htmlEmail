@@ -59,6 +59,8 @@ Your DOCTYPE declaration can be written as follows:
 
 The above `<DOCTYPE>` declaration isn't the only one you can use. Plenty of HTML email developers use some variant of the HTML 4.01 Document Type Declaration. If in doubt, start with XHTML 1.0 Transitional (shown above), then change it up as you get more comfortable with HTML email.
 
+For more on `DOCTYPE`s, view the [W3 wiki](https://www.w3.org/wiki/Doctypes_and_markup_styles).
+
 ### [html tag](#html)
 
 The `<html>` tag is where you can declare the language for your document, ex. `lang="en"` for English. It is also where you can declare XML namespaces.
