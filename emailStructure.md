@@ -127,4 +127,4 @@ Another common `<meta>` tag is one to help ensure your email renders properly in
 
 ### [style tag](#style)
 
-The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `style` attribute in your HTML elements).
+The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `<style>` attribute in your HTML elements).
