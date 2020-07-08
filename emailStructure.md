@@ -6,6 +6,7 @@ This file covers the standard structure of an html email.
 2. [DOCTYPE](#doctype)
 2. [html tag](#html)
 3. [head tag](#head)
+3. [title tag](#title)
 3. [meta tag](#meta)
 4. [style tag](#style)
 4. [script tag](#script)
@@ -89,7 +90,9 @@ You'll have to confirm which email clients you are targeting and your email goal
 
 The `<head>` element will contain metadata about your HTML document. 
 
-That metadata will be nested between your opening and closing `<head></head>` tags and will commonly include `<meta>` tags for settings such as the device viewport, `<style>` tags for your embedded CSS, and `<script>` tags which are useful for things like annotating your email for a richer user experience in Gmail's promotions tab.
+That metadata will be nested between your opening and closing `<head></head>` tags and will commonly include a `<title>` tag for setting the title on browser views, `<meta>` tags for defining `Content-Type` and `viewport`, `<style>` tags for your embedded CSS, and `<script>` tags which are useful for things like annotating your email for a richer user experience in Gmail's promotions tab.
+
+### [title tag](#title)
 
 ### [meta tag](#meta)
 
@@ -101,4 +104,10 @@ For `<meta>` tags, there are two that are commonly used; one to define your `Con
 The `<meta>` tag that sets your `Content-type` is used to ensure your document is parsed properly by the browser/email client, so you should include this in every document. 
 
 The tag for the `viewport` is important for optimizing for mobile and since the majority of subscribers now access email primarily on their phone, this tag should also be included in every document. Further info on this tag can be [found on MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag).
+
+Another common `<meta>` tag is one to help ensure your email renders properly in Microsoft Edge. If this is a concern for you with your emails, you can add: 
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+### [style tag](#style)
 
