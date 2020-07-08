@@ -49,11 +49,15 @@ You can navigate directly to an HTML email section by using the table of content
 
 ### [DOCTYPE](#doctype)
 
-The DOCTYPE is one of your opportunities to attempt to preserve the integrity of your email when it is rendered by the email client. You want to make some DOCTYPE declaration so that the browser/email client can interpret how you want your html email to be served and will do so in 'standards' mode, instead of 'quirks' mode. General consensus in the HTML email community is to use the XHTML 1.0 transitional Document Type Declaration as it results in a more predictably rendered email. 
+The DOCTYPE is one of your opportunities to attempt to preserve the integrity of your email when it is rendered by the email client. You want to make some DOCTYPE declaration so that the browser/email client can interpret how you want your html email to be served and will do so in 'standards' mode, instead of 'quirks' mode. 
+
+If you're optimizing your HTML email for all email clients, or you're just getting started and looking for a good place to start, general consensus in the HTML email community is to use the XHTML 1.0 transitional Document Type Declaration as it results in a more predictably rendered email. 
 
 Your DOCTYPE declaration can be written as follows: 
 
 `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">`
+
+The above `<DOCTYPE>` declaration isn't the only one you can use. Plenty of HTML email developers use some variant of the HTML 4.01 Document Type Declaration. If in doubt, start with XHTML 1.0 Transitional (shown above), then change it up as you get more comfortable with HTML email.
 
 ### [html tag](#html)
 
