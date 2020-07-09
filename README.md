@@ -11,3 +11,7 @@ The ultimate goal of this repo is to be a resource for beginner and advanced HTM
 - [HTML Email Overview](htmlEmailOverview.md)
 - (Upcoming) Coding for Outlook
 - (Upcoming) Coding for Gmail
+
+### Feedback
+
+If you have any feedback, would like to contribute or are interested in collaborating, please email me at devin (dot) cloud (dot) kelly (at) gmail (dot) com.
