@@ -9,5 +9,5 @@ The ultimate goal of this repo is to be a resource for beginner and advanced HTM
 ### Contents
 
 - [HTML Email Overview](htmlEmailOverview.md)
-- Coding for Outlook
-- Coding for Gmail
+- (Upcoming)Coding for Outlook
+- (Upcoming)Coding for Gmail
