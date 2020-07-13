@@ -20,6 +20,7 @@ The ultimate goal of this repo is to be a resource for beginner and advanced HTM
 
 - [HTML Email Overview](overview.md)
 - [Useful Resources](resources.md)
+- (Upcoming) State of Email - 2020 email survey
 - (Upcoming) Coding for Outlook
 - (Upcoming) Coding for Gmail
 
