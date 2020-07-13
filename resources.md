@@ -32,7 +32,7 @@ These resources help with common, specific HTML email development challenges.
 
 ### Inspiration
 
-I only list one resource, but it is a great one. Really Good Emails does a great job of not only showing what others are doing and the code they use, but also host a monthly email review where they rate an email submission and discuss what they're doing right and what can be improved upon.
+I only list one resource, but it is a great one. Really Good Emails does a great job of not only showing what others are doing with email, including the code they use, but also host a weekly email review where they rate an email submission and discuss what they're doing right and what can be improved upon.
 
 - [Really Good Emails](https://reallygoodemails.com/)
 
