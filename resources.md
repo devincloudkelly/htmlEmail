@@ -4,7 +4,7 @@ In addition to the resources that are linked throughout this repo, I wanted a pa
 There are plenty of great resources out there to help you in your HTML email development journey. Below are some that I have found most useful.
 
 
-### The Basics
+## The Basics
 
 These resources are great for getting a handle on the basics of HTML email development.
 
@@ -14,7 +14,7 @@ These resources are great for getting a handle on the basics of HTML email devel
 - [Foundation: Email Coding 101](https://litmus.com/community/learning/13-foundations-email-coding-101) by Litmus
 
 
-### Deep Dive
+## Deep Dive
 
 Similar to the above list, but goes more in depth and builds on your initial knowledge of HTML email development to gain a deeper understanding.
 
@@ -22,7 +22,7 @@ Similar to the above list, but goes more in depth and builds on your initial kno
 - [Ask a Designer: Tables or Divs for Email](https://www.campaignmonitor.com/blog/email-marketing/2019/04/ask-a-designer-tables-or-divs-for-email/#:~:text=Proper%20coding%20is%20really%20important,design%20issues%2C%20including%20padding%20problems.) by Campaign Monitor
 
 
-### Issue-Specific
+## Issue-Specific
 
 These resources help with common, specific HTML email development challenges. 
 
@@ -32,14 +32,14 @@ These resources help with common, specific HTML email development challenges.
 - [Get Started: Gmail Promotions Tab](https://developers.google.com/gmail/promotab/overview) by Google
 
 
-### Inspiration
+## Inspiration
 
 I only list one resource, but it is a great one. Really Good Emails does a great job of not only showing what others are doing with email, including the code they use, but also host a weekly email review where they rate an email submission and discuss what they're doing right and what can be improved upon.
 
 - [Really Good Emails](https://reallygoodemails.com/)
 
 
-### Tools
+## Tools
 
 The following tools can help you optimize your HTML email coding.
 
