@@ -44,7 +44,7 @@ I only list one resource, but it is a great one. Really Good Emails does a great
 The following tools can help you optimize your HTML email coding.
 
 
-#### Email Previewing
+### Email Previewing
 
 If you don't know what your email will look like for the email clients you are targeting, how can you optimize it? These tools allow you to test your emails to see how they render across the major email clients and are required to ensure your subscribers see your emails as you intended.
 
@@ -53,7 +53,7 @@ If you don't know what your email will look like for the email clients you are t
 - [Mailgun](https://www.mailgun.com/email-testing-tool/)
 
 
-#### CSS Inliners
+### CSS Inliners
 
 CSS Inliners help to streamline production. Instead of inlining an entire email by hand, you can embed your CSS in `<style>` tags in the `<head>` of your document and these tools will apply them to the correct elements in the body of your email. 
 
@@ -61,14 +61,14 @@ CSS Inliners help to streamline production. Instead of inlining an entire email 
 - [Premailer](https://www.mrtemplates.com/premailer/) by Alex Dunae
 
 
-#### Diff Tool
+### Diff Tool
 
 If you're using an IDE such as VSCode or Atom, this is already built in. For those that are not, however, a Diff tool helps you compare two pieces of code to quickly and easily find differences between them. Use this to debug why two similar sections of your HTML email are rendering differently.
 
 - [Diffchecker](https://www.diffchecker.com/) by Diffchecker
 
 
-#### Gmail Promotions Tab Builders
+### Gmail Promotions Tab Builders
 
 Gmail's promotions tab allows for additional features to be represented on your emails including logo, featured image, and promo deals. They are included via a `<script>` tag in the `<head>` of your document or via Microdata in the `<body>` of your document.
 
