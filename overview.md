@@ -15,7 +15,7 @@ This files provides a high-level overview of best-practices for constructing an 
 5. [body tag](#body)
 6. [outer table](#outertable)
 
-### [HTML Email Layout](#layout)
+## [HTML Email Layout](#layout)
 
 Rule #1. HTML email development is not the same as web development.
 
@@ -53,7 +53,7 @@ Each part of your HTML email document will require a new approach if you are com
 
 You can navigate directly to an HTML email section by using the table of contents above, or you can continue on to read through all sections from top to bottom. 
 
-### [DOCTYPE](#doctype)
+## [DOCTYPE](#doctype)
 
 The DOCTYPE is one of your opportunities to attempt to preserve the integrity of your email when it is rendered by the email client. You want to make some DOCTYPE declaration so that the browser/email client can interpret how you want your html email to be served and will do so in 'standards' mode, instead of 'quirks' mode. 
 
@@ -67,7 +67,7 @@ The above `<DOCTYPE>` declaration isn't the only one you can use. Plenty of HTML
 
 For more on `DOCTYPE`s, view the [W3 wiki](https://www.w3.org/wiki/Doctypes_and_markup_styles).
 
-### [html tag](#html)
+## [html tag](#html)
 
 The `<html>` tag is where you can declare the language for your document, ex. `lang="en"` for English. It is also where you can declare XML namespaces.
 
@@ -102,13 +102,13 @@ If, however, you will be designing emails with Outlook in mind, I'd recommend in
 
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
  
-### [head tag](#head)
+## [head tag](#head)
 
 The `<head>` element will contain metadata about your HTML document. 
 
 That metadata will be nested between your opening and closing `<head></head>` tags and will commonly include a `<title>` tag for setting the title on browser views, `<meta>` tags for defining `Content-Type` and `viewport`, `<style>` tags for your embedded CSS, and `<script>` tags which are useful for things like annotating your email for a richer user experience in Gmail's promotions tab.
 
-### [title tag](#title)
+## [title tag](#title)
 
 This one has limited use, but is still important. First, it is great for accessibility and provides a title for your HTML email for subscribers who are using an assistive device. The `<title>` element is nested between your `<head>` tags.
 
@@ -118,7 +118,7 @@ Second, if someone opens your email in the browser, this title will show up on t
       <title>How to code an HTML email</title>
     </head>
 
-### [meta tag](#meta)
+## [meta tag](#meta)
 
 For `<meta>` tags, there are two that are commonly used; one to define your `Content-Type` and one to define your `viewport`. The `<meta>` element is nested inside your `<head>` element.
 
@@ -135,7 +135,7 @@ Another common `<meta>` tag is one to help ensure your email renders properly in
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-### [style tag](#style)
+## [style tag](#style)
 
 The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `<style>` attribute in your HTML elements). Linking to external stylesheets is generally avoided.
 
