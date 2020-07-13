@@ -77,7 +77,7 @@ Since HTML email development involves developing for disparate clients, adding i
 
 One of the common sticking-points for HTML email developers is Outlook. Most versions of Outlook are now rendered by Microsoft Word (yes, that Microsoft Word) and as such, they don't display HTML elements as intuitively as you'd like. To get around this, its common to code fallbacks for the sections of your email that aren't rendering properly in Outlook. For this, you might want to add the following namespace: 
 
-    xmlns:o="urn:schemas-microsoft-com:office:office
+    xmlns:o="urn:schemas-microsoft-com:office:office"
 
 Note the `:o` after `xmlns`. This is a prefix and it allows you to designate which namespace the element you are using in your HTML document belongs to. For instance, if `<table>` exists in two namespaces, the code below references the `<table>` element that is found in the XML namespace you designated as `xmlns:o`.
 
@@ -90,13 +90,17 @@ Note the `:o` after `xmlns`. This is a prefix and it allows you to designate whi
 
 Another common XML namespace to include would be the one for VML. When you want a reliable background image in your HTML email, VML works great. You can add it with the following: 
 
-    xmlns:v="urn:schemas-microsoft-com:vml
+    xmlns:v="urn:schemas-microsoft-com:vml"
 
 Again, you need to add some designation after the  `xmlns` to allow you to differentiate between namespaces in your HTML document.
 
-You'll have to confirm which email clients you are targeting and your email goals to determine which XML namespaces to include, but here's a good starter if you plan on using a VML background: 
+Based on what your email goals are, there are two good starting places. If Outlook is not a consideration for your email goals, you can just use the standard XML namespace declaration: 
 
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+If, however, you will be designing emails with Outlook in mind, I'd recommend including the `office` and `vml` XML namespaces as you'll likely need them.
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
  
 ### [head tag](#head)
 
