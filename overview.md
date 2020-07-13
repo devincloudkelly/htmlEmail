@@ -2,7 +2,7 @@
 
 This files provides a high-level overview of best-practices for constructing an HTML email. For each section of your document, code is provided to use for boilerplate HTML email development, or for the basis of your own template. 
 
-The standards detailed in this overview come from personal experience, the resources linked to throughout this document, and a survey I completed, comparing the code inclusions and exclusions across a variety of brand emails found on [Really Good Emails](https://reallygoodemails.com/). Full details of this survey [can be found here](emailSurvey.md)
+The standards detailed in this overview come from personal experience, the resources linked to throughout this document, and an informal survey comparing code across a variety of HTML emails found on [Really Good Emails](https://reallygoodemails.com/). Full details of this survey [can be found here](emailSurvey.md)
 
 ## Table of contents
 
