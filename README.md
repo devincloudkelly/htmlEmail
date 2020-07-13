@@ -8,9 +8,9 @@ HTML email development is not the same as web development. Most of what works fo
 
 Because of this, there are a lot of 'gotchas' if you go into HTML email development with a web development mindset. 
 
-This repo's purpose is show you the standards for HTML email development and get you into an HTML email mindset so you can get started building HTML emails quickly, find solutions to common HTML email development stumbling blocks and ultimately, code great HTML emails that render properly across your targeted email clients.
+This repo's purpose is show you the standards for developing for HTML email and get you into an HTML email mindset so you can get started building HTML emails quickly, find solutions to common HTML email development stumbling blocks and ultimately, code great HTML emails that render properly across your targeted email clients.
 
-I know that for me it was a rocky start getting used to HTML email development, so I hope that this repo makes other developers' lives easier by shortening their learning curves for HTML email development
+I know that for me it was a rocky start getting used to HTML email development, so I hope that this repo makes other developers' lives easier by shortening their learning curves for HTML email development.
 
 ### How to navigate this repo
 
