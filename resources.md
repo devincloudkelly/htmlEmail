@@ -3,6 +3,7 @@
 In addition to the resources that are linked throughout this repo, I wanted a page for quick reference to common HTML email development resources. 
 There are plenty of great resources out there to help you in your HTML email development journey. Below are some that I have found most useful.
 
+
 ### The Basics
 
 These resources are great for getting a handle on the basics of HTML email development.
@@ -30,15 +31,18 @@ These resources help with common, specific HTML email development challenges.
 - [Outlook Conditional CSS](https://stackoverflow.design/email/base/mso/) by Stack Overflow
 - [Get Started: Gmail Promotions Tab](https://developers.google.com/gmail/promotab/overview) by Google
 
+
 ### Inspiration
 
 I only list one resource, but it is a great one. Really Good Emails does a great job of not only showing what others are doing with email, including the code they use, but also host a weekly email review where they rate an email submission and discuss what they're doing right and what can be improved upon.
 
 - [Really Good Emails](https://reallygoodemails.com/)
 
+
 ### Tools
 
 The following tools can help you optimize your HTML email coding.
+
 
 #### Email Previewing
 
@@ -48,6 +52,7 @@ If you don't know what your email will look like for the email clients you are t
 - [Litmus](https://www.litmus.com/)
 - [Mailgun](https://www.mailgun.com/email-testing-tool/)
 
+
 #### CSS Inliners
 
 CSS Inliners help to streamline production. Instead of inlining an entire email by hand, you can embed your CSS in `<style>` tags in the `<head>` of your document and these tools will apply them to the correct elements in the body of your email. 
@@ -55,11 +60,13 @@ CSS Inliners help to streamline production. Instead of inlining an entire email 
 - [Responsive Email CSS Inliner](https://htmlemail.io/inline/) by HTMLemail.io  
 - [Premailer](https://www.mrtemplates.com/premailer/) by Alex Dunae
 
+
 #### Diff Tool
 
 If you're using an IDE such as VSCode or Atom, this is already built in. For those that are not, however, a Diff tool helps you compare two pieces of code to quickly and easily find differences between them. Use this to debug why two similar sections of your HTML email are rendering differently.
 
 - [Diffchecker](https://www.diffchecker.com/) by Diffchecker
+
 
 #### Gmail Promotions Tab Builders
 
