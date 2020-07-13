@@ -131,13 +131,13 @@ The `<meta>` tag that sets your `Content-type` is used to ensure your document i
 
 The tag for the `viewport` is important for optimizing for mobile and since the majority of subscribers now access email primarily on their phone, this tag should also be included in every document. Further info on this tag can be [found on MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag).
 
-Another common `<meta>` tag is one to help ensure your email renders properly in Microsoft Edge. If this is a concern for you with your emails, you can add: 
+If you are optimizing for Windows Phones 7.5 or higher, then you'll want to include the following `<meta>` tag, as it enables CSS3 and media queries for those devices: 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 ## [style tag](#style)
 
-The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `<style>` attribute in your HTML elements). Linking to external stylesheets is generally avoided.
+The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `<style>` attribute in your HTML elements). Linking to external stylesheets produces mixed results and is best avoided.
 
 Depending on the email clients you are designing your emails for, the `<style>` element will commonly include common CSS styles for HTML elements and classes, `@media` queries for mobile-responsiveness, and separate stylesheets for disparate email clients, commonly for Outlook.
 
@@ -179,4 +179,9 @@ Depending on the email clients you are designing your emails for, the `<style>` 
        </style>
        <[endif]-->
 
+## [script tag](#script)
+
+Unfortunately for email marketers, `<script>` elements are not widely supported in most email clients. There are a few notable exceptions, such as Google and their Gmail promotions tab, but for now, know that `<script>` tabs likely will be stripped out or not work in your email, and should be avoided. 
+
+If needed, in place of `<script>` elements you can often use microdata in the `<body>` of the email. See [microdata example](https://developers.google.com/gmail/promotab/troubleshooting#script_tags_get_stripped_by_your_email_service_provider) for Gmail promotions tab
 
