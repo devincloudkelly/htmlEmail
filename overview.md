@@ -1,8 +1,10 @@
-This file covers the standard structure of an html email.
+## Overview
+
+This files provides a high-level overview of best-practices for constructing an HTML email. For each section of your document, code is provided to use for boilerplate HTML email development, or for the basis of your own template. The standards detailed in this overview come from personal experience, the resources linked to throughout this document, and a survey I completed, comparing the code inclusions and exclusions across a variety of brand emails found on [Really Good Emails](https://reallygoodemails.com/). Full details of this survey [can be found here](emailSurvey.md)
 
 ## Table of contents
 
-1. [Overview](#overview)
+1. [HTML Email Layout](#layout)
 2. [DOCTYPE](#doctype)
 2. [html tag](#html)
 3. [head tag](#head)
@@ -13,13 +15,17 @@ This file covers the standard structure of an html email.
 5. [body tag](#body)
 6. [outer table](#outertable)
 
-### [Overview](#overview)
+### [HTML Email Layout](#layout)
 
-While web standards have progressed and the web development community has generally embraced the transition to HTML5, HTML email has largely been stuck in the past due to a relatively large number of email clients and lack of consensus between them on what each client will interpret, strip out, replace, or disregard in your HTML email. 
+Rule #1. HTML email development is not the same as web development.
 
-As such, much of the code you will be writing when creating HTML emails will be contrary to what you would do if you were creating an HTML web page. While the approach is very similar, the implementation is different. For instance, the high-level layout of an HTML email and an HTML web page both follow a similar structural approach. The simplified structure below can serve as a starting point for either an HTML email or web page:
+While web standards have progressed and the web development community has generally embraced the transition to successively more performant and modern forms of HTML and CSS, HTML email has largely been stuck in the past. This is due to a relatively large number of email clients and lack of consensus between them on what each client will interpret, strip out, replace, or disregard in your HTML email.
 
-    <!DOCTYPE>
+As such, much of the code you will be writing when creating HTML emails will be contrary to what you would do if you were creating an HTML web page. While the approach is similar, the implementation is different. 
+
+For instance, the high-level layout of an HTML email and an HTML web page both follow a similar structural approach. The simplified structure below can serve as a starting point for either an HTML email or web page:
+
+    <!DOCTYPE >
     <html lang="en">
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
