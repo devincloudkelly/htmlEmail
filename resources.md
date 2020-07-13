@@ -34,6 +34,14 @@ These resources help with common, specific HTML email development challenges.
 
 The following tools can help you optimize your HTML email coding.
 
+#### Email Previewing
+
+If you don't know what your email will look like for the email clients you are targeting, how can you optimize it? These tools allow you to test your emails to see how they render across the major email clients and are required to ensure your subscribers see your emails as you intended.
+
+- [Email on Acid](https://www.emailonacid.com/)
+- [Litmus](https://www.litmus.com/)
+- [Mailgun](https://www.mailgun.com/email-testing-tool/)
+
 #### CSS Inliners
 
 CSS Inliners help to streamline production. Instead of inlining an entire email by hand, you can embed your CSS in `<style>` tags in the `<head>` of your document and these tools will apply them to the correct elements in the body of your email. 
