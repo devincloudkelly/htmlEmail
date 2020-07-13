@@ -3,7 +3,7 @@
 In addition to the resources that are linked throughout this repo, I wanted a page for quick reference to common HTML email development resources. 
 There are plenty of great resources out there to help you in your HTML email development journey. Below are some that I have found most useful.
 
-###The Basics
+### The Basics
 
 These resources are great for getting a handle on the basics of HTML email development.
 
