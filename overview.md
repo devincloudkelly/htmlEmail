@@ -1,6 +1,8 @@
 ## Overview
 
-This files provides a high-level overview of best-practices for constructing an HTML email. For each section of your document, code is provided to use for boilerplate HTML email development, or for the basis of your own template. The standards detailed in this overview come from personal experience, the resources linked to throughout this document, and a survey I completed, comparing the code inclusions and exclusions across a variety of brand emails found on [Really Good Emails](https://reallygoodemails.com/). Full details of this survey [can be found here](emailSurvey.md)
+This files provides a high-level overview of best-practices for constructing an HTML email. For each section of your document, code is provided to use for boilerplate HTML email development, or for the basis of your own template. 
+
+The standards detailed in this overview come from personal experience, the resources linked to throughout this document, and a survey I completed, comparing the code inclusions and exclusions across a variety of brand emails found on [Really Good Emails](https://reallygoodemails.com/). Full details of this survey [can be found here](emailSurvey.md)
 
 ## Table of contents
 
@@ -13,7 +15,6 @@ This files provides a high-level overview of best-practices for constructing an 
 4. [style tag](#style)
 4. [script tag](#script)
 5. [body tag](#body)
-6. [outer table](#outertable)
 
 ## [HTML Email Layout](#layout)
 
@@ -29,7 +30,7 @@ For instance, the high-level layout of an HTML email and an HTML web page both f
     <html lang="en">
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <!--INSERT OTHER META TAGS AND SCRIPTS HERE-->
+        <!--INSERT OTHER META TAGS HERE-->
         <style>
           <!--INSERT YOUR EMBEDDED STYLE ATTRIBUTES HERE-->
         </style>
@@ -184,4 +185,6 @@ Depending on the email clients you are designing your emails for, the `<style>` 
 Unfortunately for email marketers, `<script>` elements are not widely supported in most email clients. There are a few notable exceptions, such as Google and their Gmail promotions tab, but for now, know that `<script>` tabs likely will be stripped out or not work in your email, and should be avoided. 
 
 If needed, in place of `<script>` elements you can often use microdata in the `<body>` of the email. See [microdata example](https://developers.google.com/gmail/promotab/troubleshooting#script_tags_get_stripped_by_your_email_service_provider) for Gmail promotions tab
+
+## [body tag](#body)
 
