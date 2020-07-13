@@ -26,9 +26,15 @@ Similar to the above list, but goes more in depth and builds on your initial kno
 These resources help with common, specific HTML email development challenges. 
 
 - [Using Ghost Columns to Fix Alignment Problems in Outlook](https://www.emailonacid.com/blog/article/email-development/using-ghost-columns-to-fix-alignment-problems-in-outlook/) by Email on Acid
-- [CSS Support Guide](https://www.campaignmonitor.com/css/) by Campaign Monitor ***This is an excellent resource. Easily find out if a specific CSS attribute will render properly in an email client.
+- [CSS Support Guide](https://www.campaignmonitor.com/css/) by Campaign Monitor **This is an excellent resource. Easily find out if a specific CSS attribute will render properly in an email client.
 - [Outlook Conditional CSS](https://stackoverflow.design/email/base/mso/) by Stack Overflow
 - [Get Started: Gmail Promotions Tab](https://developers.google.com/gmail/promotab/overview) by Google
+
+### Inspiration
+
+I only list one resource, but it is a great one. Really Good Emails does a great job of not only showing what others are doing and the code they use, but also host a monthly email review where they rate an email submission and discuss what they're doing right and what can be improved upon.
+
+- [Really Good Emails](https://reallygoodemails.com/)
 
 ### Tools
 
