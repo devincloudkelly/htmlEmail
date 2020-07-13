@@ -14,11 +14,11 @@ I know that for me it was a rocky start getting used to HTML email development, 
 
 ### How to navigate this repo
 
-The ultimate goal of this repo is to be a resource for beginner and advanced HTML email developers. Current and upcoming features will be listed below. All live features will link to the appropriate page. I recommend beginners start with the [HTML Email Overview](htmlEmailOverview.md) to quickly get up to speed.
+The ultimate goal of this repo is to be a resource for beginner and advanced HTML email developers. Current and upcoming features will be listed below. All live features will link to the appropriate page. I recommend beginners start with the [HTML Email Overview](overview.md) to quickly get up to speed.
 
 ### Contents
 
-- [HTML Email Overview](htmlEmailOverview.md)
+- [HTML Email Overview](overview.md)
 - [Useful Resources](resources.md)
 - (Upcoming) Coding for Outlook
 - (Upcoming) Coding for Gmail
