@@ -70,8 +70,26 @@ For more on `DOCTYPE`s, view the [W3 wiki](https://www.w3.org/wiki/Doctypes_and_
 
 ## [html tag](#html)
 
-The `<html>` tag is where you can declare the language for your document, ex. `lang="en"` for English. It is also where you can declare XML namespaces.
+The `<html>` tag is where you can declare the language for your document, ex. `lang="en"` for English. It is also where you can declare XML namespaces. Let's go over the attributes you should include in every HTML email.
 
+### Language
+
+This is a simple one and easy to overlook, but be sure you include it. This attributes sets the language of the text in your email and is especially useful for subscribers who are using assistive devices, such as screen readers, allowing the device to be read in the correct language. If this isn't set, the `lang` attribute could default to a language different than intended.
+
+For example, if an American subscriber subscribes to a French newsletter and the `lang` attribute on that newsletter isn't set as `lang="fr"`, the user's email client may interpret it into the user's local language, English. If they were using a screen-reader, this would lead to a very poor experience for the user.
+
+What if your email has multiple languages in it? Let's say you're sending out an email for your language tutoring courses, and wanted to include the phrase "How are you?" in multiple languages? In this case, you would set the `lang` attribute in your `html` element to the predominant language of the email, then specify a new language for any elements in a different language like the example below:
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+        <body>
+            <!--Main content of your email-->
+            <p>How are you?</p>
+            <p lang="fr">Comment t'allez vous?</p>
+            <p lang="vi">Bạn khỏe không?</p>
+        </body>
+    </html>
+
+### XML Namespaces
 XML namespaces are used to define and discern between elements that share the same name. You can think of them as different "libraries" of elements for you to use in your HTML document. 
 
 Since HTML email development involves developing for disparate clients, adding in several XML namespaces in your `<html>` tag allows you to use these different "libraries" and access new elements to help you create emails that render well across clients. If you're looking for more detail on [XML namespaces](https://www.sitepoint.com/xml-namespaces-explained/), check out this article by Ian Stuart. 
