@@ -89,6 +89,8 @@ What if your email has multiple languages in it? Let's say you're sending out an
         </body>
     </html>   
 
+* Note, you could set the `lang` in the `<p>` element directly, but if you had other attributes in that element with text values, setting the `lang` attribute would change the language for *those attributes* as well. For that reason, it's safest to wrap just the text in a `<span>` and set the `lang` there.
+
 For more on setting the `lang` attribute in your HTML document, refer to the [W3 documentation](https://www.w3.org/International/questions/qa-html-language-declarations).
 
 ### XML Namespaces
