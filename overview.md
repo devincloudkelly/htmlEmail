@@ -78,16 +78,18 @@ This is a simple one and easy to overlook, but be sure you include it. This attr
 
 For example, if an American subscriber subscribes to a French newsletter and the `lang` attribute on that newsletter isn't set as `lang="fr"`, the user's email client may interpret it into the user's local language, English. If they were using a screen-reader, this would lead to a very poor experience for the user.
 
-What if your email has multiple languages in it? Let's say you're sending out an email for your language tutoring courses, and wanted to include the phrase "How are you?" in multiple languages? In this case, you would set the `lang` attribute in your `html` element to the predominant language of the email, then specify a new language for any elements in a different language like the example below:
+What if your email has multiple languages in it? Let's say you're sending out an email for your language tutoring courses, and wanted to include the phrase "How are you?" in multiple languages? In this case, you would set the `lang` attribute in your `html` element to the predominant language of the email, then specify a different language in a  `span` element for any text in a different language like the example below:
 
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
         <body>
             <!--Main content of your email-->
             <p>How are you?</p>
-            <p lang="fr">Comment t'allez vous?</p>
-            <p lang="vi">Bạn khỏe không?</p>
+            <p><span lang="fr">Comment t'allez vous?</span></p>
+            <p><span lang="vi">Bạn khỏe không?</span></p>
         </body>
-    </html>
+    </html>   
+
+For more on setting the `lang` attribute in your HTML document, refer to the [W3 documentation](https://www.w3.org/International/questions/qa-html-language-declarations).
 
 ### XML Namespaces
 XML namespaces are used to define and discern between elements that share the same name. You can think of them as different "libraries" of elements for you to use in your HTML document. 
