@@ -188,3 +188,15 @@ If needed, in place of `<script>` elements you can often use microdata in the `<
 
 ## [body tag](#body)
 
+We're finally here - we can now start to build out our email. The `<body>` of your email will look something like this:
+
+    <body>
+        <div style="display: none; max-height: 0; overflow: hidden;">INSERT YOUR PREHEADER TEXT HERE</div>
+        <table class="outer-container" border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td width="600px" >
+                    <!--CONTENT OF YOUR EMAIL GOES HERE-->
+                </td>
+            </tr>
+        </table>
+    </body>
