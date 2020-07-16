@@ -6,15 +6,15 @@ The standards detailed in this overview come from personal experience, the resou
 
 ## Table of contents
 
-1. [HTML Email Layout](#layout)
+1. [HTML Email Layout](#html-email-layout)
 2. [DOCTYPE](#doctype)
-2. [html tag](#html)
-3. [head tag](#head)
-3. [title tag](#title)
-3. [meta tag](#meta)
-4. [style tag](#style)
-4. [script tag](#script)
-5. [body tag](#body)
+2. [html tag](#html-tag)
+3. [head tag](#head-tag)
+3. [title tag](#title-tag)
+3. [meta tag](#meta-tag)
+4. [style tag](#style-tag)
+4. [script tag](#script-tag)
+5. [body tag](#body-tag)
 
 ## [HTML Email Layout](#layout)
 
