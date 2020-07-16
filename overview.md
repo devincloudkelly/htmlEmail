@@ -117,7 +117,7 @@ The `<head>` element will contain metadata about your HTML document.
        </style>
     </head>
 
-That metadata will be nested between your opening and closing `<head></head>` tags and will commonly include a `<title>` tag for setting the title on browser views, `<meta>` tags for defining `Content-Type` and `viewport`, `<style>` tags for your embedded CSS, and `<script>` tags which are useful for things like annotating your email for a richer user experience in Gmail's promotions tab.
+That metadata will be nested between your opening and closing `<head></head>` tags and will commonly include a `<title>` tag for setting the title on browser views, `<meta>` tags for defining `Content-Type` and `viewport`, and `<style>` tags for your embedded CSS.
 
 ## [title tag](#title)
 
