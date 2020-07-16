@@ -107,6 +107,16 @@ If, however, you will be designing emails with Outlook in mind, I'd recommend in
 
 The `<head>` element will contain metadata about your HTML document. 
 
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Insert Title for viewing email in Browser</title>
+       <style type="text/css">
+        <!--INSERT EMBEDDED CSS HERE-->
+        <!--ADD @MEDIA QUERIES FOR MOBILE RESPONSIVENESS-->
+       </style>
+    </head>
+
 That metadata will be nested between your opening and closing `<head></head>` tags and will commonly include a `<title>` tag for setting the title on browser views, `<meta>` tags for defining `Content-Type` and `viewport`, `<style>` tags for your embedded CSS, and `<script>` tags which are useful for things like annotating your email for a richer user experience in Gmail's promotions tab.
 
 ## [title tag](#title)
