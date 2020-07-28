@@ -164,9 +164,15 @@ The `<meta>` tag that sets your `Content-type` is used to ensure your document i
 
 The tag for the `viewport` is important for optimizing for mobile and since the majority of subscribers now access email primarily on their phone, this tag should also be included in every document. Further info on this tag can be [found on MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag).
 
+### Other useful tags
+
 If you are optimizing for Windows Phones 7.5 or higher, then you'll want to include the following `<meta>` tag, as it enables CSS3 and media queries for those devices: 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+When your emails render on iOS you'll notice that it automatically detects phone numbers, styles them as a link and allows you to click it to initiate a call. Most of the time, this is a great built-in feature, but if you are sending other important numbers that look like phone numbers, such as account numbers, or you simply don't want this feature in yourr emails, you can add the following `meta` tag to tell iOS not to automatically detect phone numbers:
+
+    <meta name="format-detection" content="telephone=no">
 
 ## [style tag](#style)
 
@@ -216,13 +222,13 @@ Depending on the email clients you are designing your emails for, the `<style>` 
 
 Unfortunately for email marketers, `<script>` elements are not widely supported in most email clients. There are a few notable exceptions, such as Google and their Gmail promotions tab, but for now, know that `<script>` tabs likely will be stripped out or not work in your email, and should be avoided. 
 
-If needed, in place of `<script>` elements you can often use microdata in the `<body>` of the email. See [microdata example](https://developers.google.com/gmail/promotab/troubleshooting#script_tags_get_stripped_by_your_email_service_provider) for Gmail promotions tab
+If needed, in place of `<script>` elements you can often use microdata in the `<body>` of the email. See [microdata example](https://developers.google.com/gmail/promotab/troubleshooting#script_tags_get_stripped_by_your_email_service_provider) for Gmail promotions tab.
 
 ## [body tag](#body)
 
 We're finally here - we can now start to build out our email. The `<body>` of your email will look something like this:
 
-    <body>
+    <body width="100%">
         <div style="display: none; max-height: 0; overflow: hidden;">INSERT YOUR PREHEADER TEXT HERE</div>
         <table class="outer-container" border="0" cellspacing="0" cellpadding="0" width="100%">
             <tr>
@@ -232,3 +238,60 @@ We're finally here - we can now start to build out our email. The `<body>` of yo
             </tr>
         </table>
     </body>
+    
+We'll go into detail below, but know that HTML email consists of levels and levels of nested table elements. Unlike HTML for web development where `<div>`s are the predominant structural element, you will be structuring all layouts with `<table>`s. 
+
+You will generally have an outer container to set the overall dimensions of your email, then use `<table>`, `<tr>`, and `<td>` elements to define new sections, rows and columns. 
+
+### Body and Outer Container
+
+The construction of the `<body>` tag and the first `<table>` tags are important as they will be used to define the overall structure of your email. It is considered best practice to set the `<body>` width to 100% and then set the width of your email in your outer table.
+
+This outer `<table>` is commonly referred to as an `outer` or `wrapper` table and is meant as a first line of defense against Email Clients. Some will strip out the body tag, so the outer `table` is important to ensure your email width is set properly. Follow the example above and set the outer `<table>`s width to 100%, and then set the overall width of your email in the `<td>` element of your outer table. 
+
+A note about email widths. Industry best practice recommends between 400-600px width for your emails. Going much over 600px will lead to rendering issues across devices, while going too small decreases the size of the canvas you can work with. I'd recommend starting at 600px then adjusting as needed.
+
+### Table Structure
+
+In reviewing emails across industries, there seem to be two main approaches to structuring your emails. The `table`/`tr`/`td` structure and the `table`/`tbody`/`tr`/`td` structure. I'd recommend using `table`/`tr`/`td` structure for two reasons. First, it cuts out an unnecessary layer which helps to reduce confusion, especially when writing your first HTML emails. Second, the `<tbody>` tag isn't supported in all email clients, so not using it removes the requirement for additional fallbacks coded into your email.
+
+As far as I can tell, those using the `table`/`tbody`/`tr`/`td` structure are predominantly ESPs, likely using `<tbody>` tags for some dynamic effect related to their email software. For 'handwritten' HTML emails, I go with the recommendations of Litmus and Email on Acid and prefer the simpler, more bulletproof `table`/`tr`/`td` structure.
+
+### Nested Tables
+
+The body of your email will follow a structure similar to below: 
+
+    <body>
+        <!--THIS FIRST TABLE WILL BE YOUR OUTER CONTAINER-->
+        <table class="outer">
+            <tr>
+                <td>
+                <!--INSIDE THIS CELL IS WHERE YOU'LL ADD ALL OF YOUR EMAIL CONTENT-->
+                <table class="header">
+                    <tr>
+                        <td>
+                            <!--ADD HEADER CONTENT HERE-->
+                        </td>
+                    </tr>
+                </table>
+                <table class="header">
+                    <tr>
+                        <td>
+                            <!--ADD BODY CONTENT HERE-->
+                        </td>
+                    </tr>
+                </table>
+                <table class="header">
+                    <tr>
+                        <td>
+                            <!--ADD FOOTER CONTENT HERE-->
+                        </td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+All of your content will be housed in a `<td>` element.
+
