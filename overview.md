@@ -247,7 +247,7 @@ You will generally have an outer container to set the overall dimensions of your
 
 The construction of the `<body>` tag and the first `<table>` tags are important as they will be used to define the overall structure of your email. It is considered best practice to set the `<body>` width to 100% and then set the width of your email in your outer table.
 
-This outer `<table>` is commonly referred to as an `outer` or `wrapper` table and is meant as a first line of defense against Email Clients. Some will strip out the body tag, so the outer `table` is important to ensure your email width is set properly. Follow the example above and set the outer `<table>`s width to 100%, and then set the overall width of your email in the `<td>` element of your outer table. 
+This outer `<table>` is commonly referred to as an `outer` or `wrapper` table and is meant as a first line of defense against Email Clients. Some will strip out the body tag, so the outer `<table>` is important to ensure your email width is set properly. Follow the example above and set the outer `<table>`s width to 100%, and then set the overall width of your email in the `<td>` element of your outer table. 
 
 A note about email widths. Industry best practice recommends between 400-600px width for your emails. Going much over 600px will lead to rendering issues across devices, while going too small decreases the size of the canvas you can work with. I'd recommend starting at 600px then adjusting as needed.
 
