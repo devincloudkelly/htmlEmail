@@ -75,3 +75,18 @@ Format detection `meta` tags can be added depending on your style needs. These t
 Some emails included a `robot` `meta` tag that is used to instruct browsers not to index the page. These were all used in conjunction with OpenGraph. If you aren't using OpenGraph, don't worry about this tag. 
 
 Some emails also included a `referrer` `meta` tag. This is used for SEO and analytics purposes and informs the browser who the referrer is. I need to do more digging on this one, but I have a feeling this only provides value when the email is viewed in browser or perhaps when a link is clicked. More research is needed. 
+
+## Style
+
+Only three things were looked at here. Whether the email included embedded CSS, whether it had media queries, and if there was an additional embedded css section specifically for Outlook.
+
+23 of 25 emails included media queries. While you can create responsive emails without using media queries and instead using simple layouts and hybrid or 'spongy' coding, it seems like pretty much everyone is using media queries. Especially if you want your mobile email to render different than your desktop email, I've found @media queries to be much easier by adding mobile and/or desktop classes to change elements easily based on the screensize.
+
+20 of 25 emails included embedded CSS. This means they included their CSS in a `<style>` tag in the `<head>` of their email. **Note:** This does not mean that they didn't also have styles inlined in their email. From a production standpoint, embedding your CSS is cleaner and more efficient than only inlining. In addition to embedded CSS, I recommend also inlining your emails using a CSS inliner. 
+
+On par with what we've seen for these emails supporting Outlook, 9 of 25 emails had a separate embedded CSS section just for Outlook. Again, if you're targeting Outlook, this is a good idea.
+
+
+## Body
+
+This section will be written soon!
