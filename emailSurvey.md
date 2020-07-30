@@ -17,7 +17,7 @@ Let's dig in.
 
 Individual emails are laid out as columns, and the fields I am exploring are listed as rows. Totals are found in the last column and help to guide my overall discoveries.
 
-The fields are divided into 4 sections: Email basics, `HTML/Head`, `Style`, and `Body`. 
+The fields are divided into 4 sections: Email basics, HTML/Head, Style, and Body. 
 
 The email basics section includes a link to the email's code on [Really Good Emails](https://reallygoodemails.com/), the Email Service Provider used to send that email (if known), and if the email is marked as NOT being mobile-friendly by RGE. 
 
@@ -28,4 +28,17 @@ This spreadsheet gives you a good overview of patterns, but looking at the indiv
 ### DOCTYPE
 
 Overall, the majority of emails(15 out of 25) used the xhtml 1.0 transitional DOCTYPE, which has long been a standard for HTML emails. 3 had no DOCTYPE declaration, which is inadvisable, 3 declared HTML5, 2 declared html 4.01 strict, 1 declared xhtml 1.0 strict and 1 declared html 4.01 loose. 
+
+Insights: Use the xhtml 1.0 transitional declaration for reliable rendering and a large online knowledgebase for support. HTML5 and html4.01 strict seem to be used for newer features of the languages but they will be harder to find solutions for online. 
+
+### XML namespaces and attributes
+
+Rows 7 thru 12 were used to track whether an XML namespace or attribute was present in the email's code or not. The one main takeaway from this assessment is that you should always include the basic `xmlns` `<meta>` element in your HTML email. The one exception to this is if you're using the HTML5 DOCTYPE, in which case XML namespace declarations are not required. 
+
+The next most frequently used tags with 8 of the 25 emails using them were `xmlns:v` and `xmlns:o`, which are used primarily for dealing with Outlook. The takeaway from this is if you're optimizing your emails for viewing in Outlook, you will likely need to declare these namespaces in order to create fallbacks such as fallback buttons and fixing the Outlook DPI scaling issue.
+
+4 of the 25 emails I looked at included XML namespaces for Facebook and OpenGraph. I did some investigating into them and they only appear in the head of the email and don't seem to be used for styling elements in the body of the email. It looks like these tags are used to add your email to Facebook's OpenGraph, which allows a browser version to be linked from your Facebook page. More investigation required on this topic.
+
+Only 3 of the 25 emails included a `lang` attribute in their standard `xmlns` declaration. Especially as brands expand their reach globally and we should be optimizing for accessibility, the `lang` attribute should be included in every email and localized to the language the email is written in. 
+
 
