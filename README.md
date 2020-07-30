@@ -25,4 +25,4 @@ The ultimate goal of this repo is to be a resource for beginner and advanced HTM
 
 ### Feedback
 
-If you have any feedback, would like to contribute or are interested in collaborating, please email me at devin (dot) cloud (dot) kelly (at) gmail (dot) com.
+If you have any feedback, would like to contribute or are interested in collaborating, please open a pull request. 
