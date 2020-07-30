@@ -21,6 +21,7 @@ The ultimate goal of this repo is to be a resource for beginner and advanced HTM
 - [HTML Email Overview](overview.md)
 - [Useful Resources](resources.md)
 - [2020 email survey](emailSurvey.md)
+- Basic HTML Email template - Coming Soon! 
 
 ### Feedback
 
