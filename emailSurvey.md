@@ -11,7 +11,7 @@ Additional details are being added frequently. Check back for more updates!
 
 While this was a relatively small (25 emails) comparison, it was useful to help draw out common patterns in optimal HTML email design as well as discover new use-cases and falllbacks. The purpose was to compare many of the common or frequent elements of modern, visually-impactful HTML emails to discover what works, what others are using, and ultimately, to learn more about HTML email development. 
 
-There are other HTML email elements that aren't covered in this survey that other's are using. This is not meant to be an end-all be-all overview. Instead, it is meant to get a quick insight into the current state of HTML email.
+There are other HTML email elements that aren't covered in this survey and thats OK. This is not meant to be an end-all be-all overview. Instead, it is meant to get a quick insight into the current state of HTML email.
 
 Let's dig in.
 
