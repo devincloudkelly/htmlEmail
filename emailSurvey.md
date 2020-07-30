@@ -11,7 +11,7 @@ Additional details are being added frequently. Check back for more updates!
 
 While this was a relatively small (25 emails) comparison, it was useful to help draw out common patterns in optimal HTML email design as well as discover new use-cases and falllbacks. The purpose was to compare many of the common or frequent elements of modern, visually-impactful HTML emails to discover what works, what others are using, and ultimately, to learn more about HTML email development. 
 
-There are other HTML email elements that aren't covered in this survey and thats OK. This is not meant to be an end-all be-all overview. Instead, it is meant to get a quick insight into the current state of HTML email.
+There are other HTML email elements that aren't covered in this survey and thats OK. This is not meant to be an end-all be-all overview. Instead, it is meant to give a quick insight into the current state of HTML email.
 
 Let's dig in.
 
@@ -58,7 +58,14 @@ Another frequently used `meta` tag is the one that is used to enable CSS3 and me
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
  
-DPI Scaling fix.
+11 emails included a fix for a long-standing issue on certain versions of Outlook that causes your email to render erratically if the suscriber's display zoom is set to anything other than 100%. Obviously, if you're adding this fix, you are targeting Outlook. Feel free to skip if you aren't concerned about Outlook.
+
+    <!--[if gte mso 9]><xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml><![endif]-->
 
 Format detection `meta` tags can be added depending on your style needs. These tags are used to prevent iOS clients from automatically styling certain elements that they recognize, such as phone numbers and dates, and turning them into links that direct the user to the phone or calendar app. If you want to turn off that functionality, include the appropriate tag from below:
 
@@ -66,3 +73,5 @@ Format detection `meta` tags can be added depending on your style needs. These t
     <meta name="format-detection" content="date=no">
 
 Some emails included a `robot` `meta` tag that is used to instruct browsers not to index the page. These were all used in conjunction with OpenGraph. If you aren't using OpenGraph, don't worry about this tag. 
+
+Some emails also included a `referrer` `meta` tag. This is used for SEO and analytics purposes and informs the browser who the referrer is. I need to do more digging on this one, but I have a feeling this only provides value when the email is viewed in browser or perhaps when a link is clicked. More research is needed. 
