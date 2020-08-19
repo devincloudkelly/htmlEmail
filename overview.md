@@ -170,9 +170,14 @@ If you are optimizing for Windows Phones 7.5 or higher, then you'll want to incl
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-When your emails render on iOS you'll notice that it automatically detects phone numbers, styles them as a link and allows you to click it to initiate a call. Most of the time, this is a great built-in feature, but if you are sending other important numbers that look like phone numbers, such as account numbers, or you simply don't want this feature in yourr emails, you can add the following `meta` tag to tell iOS not to automatically detect phone numbers:
+When your emails render on iOS you'll notice that it automatically detects phone numbers and dates, styles them as a link and allows you to click them to initiate a call or add to your calendar. 
+
+Most of the time, this is a great built-in feature, but if you are sending other important numbers that look like phone numbers, such as account numbers, or you want subscribers to click on a CTA to learn more about an event (instead of saving it to their calendar), you'll want to disable these features. 
+
+You can add the following `meta` tags to tell iOS not to automatically detect and format phone numbers and dates:
 
     <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
 
 ## [style tag](#style)
 
