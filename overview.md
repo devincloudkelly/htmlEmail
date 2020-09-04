@@ -18,7 +18,7 @@ The standards detailed in this overview come from personal experience, the resou
 
 ## [HTML Email Layout](#layout)
 
-Rule #1. HTML email development is not the same as web development.
+To begin, HTML email development is not the same as web development. They are related, but each has evolved down a separate path.
 
 While web standards have progressed and the web development community has generally embraced the transition to successively more performant and modern forms of HTML and CSS, HTML email has largely been stuck in the past. This is due to a relatively large number of email clients and lack of consensus between them on what each client will interpret, strip out, replace, or disregard in your HTML email.
 
