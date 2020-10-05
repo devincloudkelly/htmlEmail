@@ -181,14 +181,16 @@ You can add the following `meta` tags to tell iOS not to automatically detect an
 
 ## [style tag](#style)
 
-The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `<style>` attribute in your HTML elements). Linking to external stylesheets produces mixed results and is best avoided.
+The `<style>` element is where you can add your embedded CSS. With HTML emails, CSS is not as globally supported as it is in web browsers, so the most common methods for adding CSS styling are embedded CSS (CSS added inbetween your `<style>` tags) and inline CSS (CSS written inline in a `<style>` attribute in your HTML elements). Linking to external stylesheets produces mixed results and is generally avoided.
 
-Depending on the email clients you are designing your emails for, the `<style>` element will commonly include common CSS styles for HTML elements and classes, `@media` queries for mobile-responsiveness, and separate stylesheets for disparate email clients, commonly for Outlook.
+Depending on the email clients you are designing your emails for, the `<style>` element will include common CSS styles for HTML elements and classes, `@media` queries for mobile-responsiveness, and separate stylesheets for disparate email clients, commonly for Outlook.
 
-       <style>
+TIP: I've experienced rendering issues with Gmail on Mobile (specifically with the Pixel) where the email doesn't render as mobile responsive and instead renders the desktop version. I've found this [separate style tags solution on Litmus' forum](https://litmus.com/community/discussions/7437-media-queries-not-rendering-on-gmail-mobile-app) which works great (thanks [Olga Kham](https://ca.linkedin.com/in/olga-kham)!) Separating your media query style resets into their own `<style>` tag gets around the issue where the Gmail mobile app strips out unsupported code. In practice, I now put every distinct set of style resets in their own tag (ex. desktop, mobile, outlook..)
+
        
-       <!--Styling for HTML elements and classes-->
-       
+       <!--STYLING RESETS FOR DESKTOP / NON-MOBILE FORMATS-->
+       <style type="text/css">
+                  
         h1 {
          font-size: 22px;
          line-height: 30px;
@@ -203,7 +205,12 @@ Depending on the email clients you are designing your emails for, the `<style>` 
         .desktop-button {
          width: 50%;
         }
+       </style>
         
+        
+       <!--STYLING RESETS FOR MOBILE USING MEDIA QUERIES-->
+        
+       <style type="text/css">
         <!--Media queries for mobile-responsiveness-->
         
         @media only screen and (max-width: 660px) {
@@ -213,13 +220,14 @@ Depending on the email clients you are designing your emails for, the `<style>` 
         } 
        </style>
        
-       <!--Separate Stylesheet for Outlook-->
+       
+       <!--SEPARATE STYLESHEET FOR OUTLOOK-->
        
        <!--[if mso]>
-       <style>
-        p {
-         font-size: 100% !important;
-        }
+        <style>
+         p {
+          font-size: 100% !important;
+         }
        </style>
        <[endif]-->
 
