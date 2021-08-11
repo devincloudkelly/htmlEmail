@@ -178,7 +178,7 @@ And here's the code for a 3 column table:
   
 ### Full-width mobile images, with Outlook fix
 
-This fix is for when you have use images in a multi-column setup, as in the code above. On desktop, you want the images to be smaller so they fit in the column nicely, but then expand to fill a single column on mobile. To do this without stretching the image, you need a large image size. The issue with a large image size is that Outlook likes to ignore your width settings and display images based on what size they are. This fix creates an Outlook-only image and sets the `display` of the standard image to `none`, allowing you to have an image that renders well on desktop, mobile, and Outlook. The article that helped me find this solution can be found (here)['https://jasemiller.medium.com/a-fix-for-outlook-image-issues-in-html-email-campaigns-b8dd1c8f7d16']
+This fix is for when you have use images in a multi-column setup, as in the code above. On desktop, you want the images to be smaller so they fit in the column nicely, but then expand to fill a single column on mobile. To do this without stretching the image, you need a large image size. The issue with a large image size is that Outlook likes to ignore your width settings and display images based on what size they are. This fix creates an Outlook-only image and sets the `display` of the standard image to `none`, allowing you to have an image that renders well on desktop, mobile, and Outlook. The article that helped me find this solution can be found [here](https://jasemiller.medium.com/a-fix-for-outlook-image-issues-in-html-email-campaigns-b8dd1c8f7d16)
 
 
 Here's the code: 
