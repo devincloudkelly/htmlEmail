@@ -1,4 +1,4 @@
-#Code snippets
+# Code snippets
 
 This file contains a collection of code snippets, categorized by usage, ex. images, tables, templates.
 
