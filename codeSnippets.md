@@ -96,3 +96,78 @@ Here's the CSS for this layout:
       </tr>
     </table>
 <!--End LTR Table for 2 columns-->
+
+
+And here's the code for a 3 column table:
+
+    <!--Insert LTR table for 3 columns-->
+    <!-- left to right table 1--> 
+    <table cellpadding="0" cellspacing="16" border="0" width="100%" bgcolor="#ffffff" class="bloc-main ltr-outer-table" style="background: #ffffff;direction: ltr;  border: 0px solid #ffffff; border-collapse: separate !important;" dir="ltr">
+      <tr>
+       <th class="mobile-column-outer mobile-top-block" width="33.3%" dir="ltr">
+
+         <!--Ghost Table for Column 1-->
+          <!--[if mso]>
+    <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="140">
+    <tr>
+    <th align="center" valign="middle" width="140"><[endif]-->
+          <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+            <tr>
+              <td class="mobile-column-inner" style="padding: 8px; height: 100%; align: center;" align="center" valign="middle">
+                <div data-type="slot" data-key="fjwbyicjba" data-label="Drop Column 1 here"></div>
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]>  
+    </th>
+    </tr>
+    </table><[endif]-->
+          <!--End Ghost Table for Column 1-->
+
+        </th>
+        <th class="mobile-column-outer mobile-middle-block" width="33.3%" dir="ltr">
+
+        <!--Ghost table for Column 2-->
+          <!--[if mso]>
+    <table border="0" align="center" cellspacing="0" cellpadding="0" width="140">
+    <tr>
+    <td align="center" valign="middle" width="140"><[endif]-->
+          <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+            <tr>
+              <td class="mobile-column-inner" style="padding: 8px; height: 100%;" align="center" valign="middle">
+                 <div data-type="slot" data-key="arfj8bswni" data-label="Drop Column 2 here"></div>
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]>
+    </td>
+    </tr>
+    </table>
+    <[endif]-->
+          <!--End ghost table for Column 2-->
+
+        </th>
+        <th class="mobile-column-outer mobile-bottom-block" width="33.3%" dir="ltr">
+
+         <!--Ghost Table for Column 3-->
+          <!--[if mso]>
+    <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="140">
+    <tr>
+    <th align="center" valign="middle" width="140"><[endif]-->
+          <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+            <tr>
+              <td class="mobile-column-inner" style="padding: 8px; height: 100%;" align="center" valign="middle">
+                 <div data-type="slot" data-key="aprnbuakqjeba" data-label="Drop Column 3 here"></div>
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]>  
+    </th>
+    </tr>
+    </table><[endif]-->
+          <!--End Ghost Table for Column 3-->
+
+        </th>
+      </tr>
+    </table>
+    <!--End LTR Table for 3 columns-->
